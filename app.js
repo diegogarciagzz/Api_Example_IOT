@@ -7,20 +7,12 @@
  *    1.1. Desde una terminal, accede a la carpeta del API donde se ubica este archivo (app.js)
  *    1.2. En la terminal ejecuta el comando:
  *         > npm install  //Instalará todas las dependencias necesarias.
- * 2. Copia y pega el archvio sensorTemperatura y sustituye la información correspondiente a cada uno de
- *     tus sensores.
- * 3. Sigue las instrucciones de cada archvio.
- *    3.1. En el archivo /database/db.js sustituye la información para la que corresponda a tu base de datos local
- *    3.2. En el archvio de cada sensor, sigue las instrucciones para modificar los queries SQL de cada una de tus tablas
- *    3.3. En el archivo route, configura tu servidor para que cada endpoint se habilite y tenga una URL
- * 4. Arranca tu API.
- *    4.1. Desde una terminal, accede a la carpeta del API donde se ubica este archivo (app.js)
- *    4.2. Ejecuta el siguiente comando, para arrancar tu api:
- *         > node app.js
- * 
- *    4.3. Deberás ver un mensaje que te indique que el servidor está corriendo en el puerto 3000.
- * 5. Para enviar datos desde tu NodeMCU, deberás utilizar la instrucción correspondiente para hacer una petición
- *    HTTP POST o GET
+ * 2. Debes crear un archivo .env en la carpeta raíz del projecto (donde está el archivo app.js). En las carpetas compartidas
+ *    de drive dejaré un ejemplo del archivo.
+ *    En el archivo env deberás inclir la información de tus credenciales para acceder a tu BD Aiven o Local.
+ * 3. Para ejecutar el proyecto:
+ *    3.1. Desde una terminal, ejecuta: node app.js -> Desde la carpeta raiz del proyecto (donde está el archivo app.js)
+ *    3.2. Desde visual studio code, abre el archivo app.js y ejecuta debug. Selecciona como modo debug el propuesto (Node js)
  */
 
 

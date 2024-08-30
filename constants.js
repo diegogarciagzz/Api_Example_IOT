@@ -1,7 +1,8 @@
 
 /*
- * Database Configuration.
- * Here you tell about the host, the port, the user and password. 
+ * LOCAL DATABASE Config
+ * 
+ *  Para acceder a una BD en la nube debes configurar un archivo .env
  */
 const dbHost = "localhost";
 const dbPort = "3306";
@@ -18,7 +19,7 @@ const serverPort = 3000
 const contextURL = '/iot'; //If needed, project context
 const api = '/api'; // Sugested API URL
 
-//SENSOR 1 URLS
+//SENSOR 1 URLS. Configurar URLS por cada sensor.
 const getTemperatureSensor = '/getTemperatures'
 const getTemperatureSensorByDate = '/getTemperatures'
 const postTemperatureSensor = '/insertTemperature'; //Implemented Endpoint URL
@@ -26,6 +27,7 @@ const postTemperatureSensor = '/insertTemperature'; //Implemented Endpoint URL
 
 /*
  * DB Queries
+ * Agregar queries por sensor.
  */
 const selectTemperature = 'SELECT * FROM temps';
 const selectTemperatureByDate = 'SELECT * FROM temps WHERE fecha between ? and ?';

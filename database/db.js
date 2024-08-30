@@ -9,8 +9,10 @@ const {DB_HOST, DB_PORT,DB_USER, DB_PASS} = process.env
  * 
  * Instrucciones:
  * 
- * 1. Debes modificar tu información del "Password" de tu usuario Root en tu server
- * 2. Debes modificar el nombre de tu base de datos.
+ * 1. Debes agregar en la carpeta raíz del proyecto un archivo .env donde configures variables de entorno.
+ * 2. Configura la información de tu BD en las variables de entorno.
+ * 3. Si estás usando Aiven, incluye tambien tu certificado SSL con una ruta válida de tu computadora.
+ * 4. En la carpeta database te dejo compartido un archivo .sql para que puedas hacer restore de mi base de datos.
  */
 function getConnection(){
   const connection = mysql.createConnection({
