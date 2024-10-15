@@ -28,7 +28,7 @@ const router = require('./route')
  * Paso 1: Crear el servidor con Express.
  */
 const app = express();
-const port = constants.serverPort;
+const port = process.env.PORT || constants.serverPort;
 
 
 /** 
