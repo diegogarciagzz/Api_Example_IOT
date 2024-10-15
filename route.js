@@ -12,6 +12,10 @@ const express = require('express');
 const temperaturaController = require('./RestControllers/sensorTemperatura.js'); 
 const router = express.Router();
 
+router.get("/",function(req,res){
+    res.send('<html><head><title>API IoT</title></head><body><h1>Hello World!</h1></body></html>');
+});
+
 /**
  * URL's que debes configurar en tu server para incluir tus endpoints que reciben peticiones para cada 
  * sensor.

@@ -2,7 +2,7 @@ const mysql = require('mysql2');
 var fs = require("fs");
 require('dotenv').config() // https://dev.to/_staticvoid/accessing-env-files-natively-with-nodejs-44hf - ACCESS TO ENV Vars
 
-const {DB_HOST, DB_PORT,DB_USER, DB_PASS} = process.env
+const {DB_HOST, DB_PORT,DB_USER, DB_PASS, CA_CERT} = process.env
 
 /**
  * Método que configura un objeto conexión y lo regresa a quien lo solicite.
@@ -22,9 +22,9 @@ function getConnection(){
     password: DB_PASS,
     database: "iot",
     dateStrings: true, //https://stackoverflow.com/questions/49475282/mysql-date-different-while-retrieving-from-node-js - Ignore timezone and use dates as strings
-    ssl: {
-      ca: fs.readFileSync('C:/Conciencia/Projects/ca_tec.pem')
-    }
+    // ssl: {
+    //   ca: CA_CERT//fs.readFileSync('C:/Conciencia/Projects/ca_tec.pem')
+    // }
   });
 
   return connection;
