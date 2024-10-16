@@ -7,7 +7,7 @@
 const dbHost = "localhost";
 const dbPort = "3306";
 const dbUser = "root";
-const dbPass = "4747819";
+const dbPass = "1020";
 const dbName = "iot";
 
 
